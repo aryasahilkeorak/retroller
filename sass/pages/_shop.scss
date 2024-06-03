@@ -1,0 +1,231 @@
+.shop-hero-banner {
+    @include bg-properties(url(../../assets/images/services/hero-banner-img.png));
+    @include banner-padding;
+
+}
+
+.shop-products-list-sec {
+    @include services-section;
+    margin-top: -1px;
+
+    .orderby {
+        &.form-control {
+            font-size: calc($fs-small);
+            font-weight: lighter;
+            color: $gray-500;
+            padding: 0.5rem 1.5rem;
+        }
+
+        option {
+            color: $primary;
+        }
+
+    }
+
+    .shop-products-search-bar {
+
+        form {
+            .search-box {
+                &::placeholder {
+                    font-size: calc($fs-small);
+                    font-weight: lighter;
+                    color: $gray-500;
+                }
+            }
+
+            .search-button {
+                border: 1px solid $white;
+                width: 40px;
+                color: $secondary;
+
+                &.hover-secondary {
+                    transition: ease-in 0.5s;
+                    box-shadow: 0 0 0 0px $secondary inset;
+
+                    &:hover {
+                        box-shadow: 0 0 0 3em $secondary inset;
+                        color: $white;
+
+                        i {
+                            color: $white  !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .shop-pagination {
+        .pagination {
+            .page-item {
+                .page-link {
+                    background-color: transparent;
+                    color: $gray-500;
+                    box-shadow: 0 0 0 0px $secondary inset;
+                    transition: 1s linear;
+
+                    &:hover {
+                        box-shadow: 0 0 0 3em $secondary inset;
+                    }
+                }
+            }
+        }
+    }
+
+    .cart-main,
+    .featured-products {
+        .cart-box {
+            padding-bottom: 10px;
+
+            .clear-cart {
+                width: 20px;
+                right: 0px;
+                top: 0px;
+                box-shadow: 0 0 0 3em $secondary inset;
+                border: 1px solid $secondary;
+                transition: 0.4s linear;
+
+                &:hover {
+                    box-shadow: 0 0 0 0px $secondary inset;
+                    border: 1px solid $white;
+                    background-color: $primary;
+                }
+            }
+
+            .image {
+                max-width: 100px;
+            }
+
+            .description {
+                max-width: 200px;
+            }
+
+        }
+    }
+}
+
+.main-product-img-details {
+    .main-product-details {
+        .main-products-buttons {
+            .quantity {
+                width: 80px;
+                background: transparent;
+                border: 1px solid $secondary;
+                color: $white;
+
+                &:focus {
+                    border: 1px solid $secondary;
+                }
+            }
+        }
+    }
+}
+
+
+// shop cart
+
+.cart-main-sec {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 15px 15px;
+
+        tr {
+
+            td {
+                &:nth-child(n) {
+                    width: 40%;
+                }
+
+                &:nth-child(2n),
+                &:nth-child(3n) {
+                    width: 15%;
+                }
+
+                &:nth-child(4n) {
+                    width: 25%;
+                }
+
+                &:nth-child(5n) {
+                    width: 5%;
+                }
+            }
+        }
+
+    }
+
+    .cart-head {
+        background: $secondary;
+    }
+
+    .cart-body {
+        tr {
+            td {
+
+                img {
+                    max-width: 70px;
+                }
+
+            }
+        }
+
+        .cart-clear-button-rounded {
+            width: 20px;
+            height: 23px;
+        }
+
+
+    }
+}
+
+.quantity {
+    width: 70px;
+    background: transparent;
+    border: 1px solid #F83E2A;
+    color: #FFFFFF;
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    @include media-breakpoint-down(sm){
+        width: 55px;
+    }
+}
+
+.cart-main-mobile-sec {
+    display: block;
+
+    @include media-breakpoint-up(sm) {
+        display: none;
+    }
+
+    .product-image {
+        max-width: 80px;
+    }
+
+    .mobile-cart-buttons {
+        button {
+            width: 49%;
+
+            i {
+                color: $secondary;
+            }
+
+            &:hover {
+                color: $white;
+
+                i {
+                    color: $white;
+                }
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

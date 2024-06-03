@@ -1,0 +1,20 @@
+{
+  "name": "ratrollerband",
+  "version": "1.0.0",
+  "description": "A band group's website theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch sass/main.scss assets/css/style.css"
+  },
+  "keywords": [
+    "music",
+    "band"
+  ],
+  "author": "UIUX DEN",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.0"
+  }
+}

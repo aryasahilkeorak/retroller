@@ -1,0 +1,56 @@
+.services-hero-banner {
+    @include bg-properties(url(../../assets/images/services/hero-banner-img.png));
+    @include banner-padding;
+}
+
+
+.services-we-offer-sec {
+    @include services-section;
+
+    .services-card {
+        transition: ease-in-out 0.5s;
+
+        &:hover {
+            background-color: $secondary-blue;
+
+            .card-heading {
+                transition: ease-in-out 0.5s;
+                color: $secondary;
+            }
+
+            svg {
+                path {
+                    transition: ease-in-out 0.5s;
+                    fill: $secondary;
+
+                    &:nth-child(2) {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services-testimonial-sec{
+    @include bg-properties(url(../../assets/images/services/testimonials-bg-img.png));
+    @include services-section;
+}
+
+.services-our-packages-sec {
+    @include services-section;
+
+    .package-card {
+        background-color: $secondary-blue;
+        border: 1px solid transparent;
+        transition: ease-in-out 0.5s;
+
+        &:hover {
+            border: 1px solid $white;
+        }
+
+        .border-dashed-bottom {
+            border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.2);
+        }
+    }
+}

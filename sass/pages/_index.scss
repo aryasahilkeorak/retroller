@@ -1,0 +1,504 @@
+// hero banner start
+.index-hero-banner-sec {
+    @include bg-properties(url(../../assets/images/index/index-hero-banner.png));
+    min-height: 100vh;
+    padding: 150px 0 0 0;
+
+    .hero-number-row {
+        margin-top: 5%;
+        overflow-x: hidden;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 10%;
+        }
+
+        .hero-work-numbers {
+            padding: 0 150px;
+            border-right: 1px solid rgba($color: $dark, $alpha: 0.7);
+
+            @include media-breakpoint-down(xl) {
+                padding: 0 100px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding: 30px 0px;
+                border-right: 0;
+            }
+
+        }
+    }
+}
+
+// about ret rollers section start
+.index-about-retroller-sec {
+    
+    @include media-breakpoint-down(md){
+        padding-bottom: 40px;
+    }
+
+    .about-brand-heading {
+
+        &::after {
+            @include after-underline($secondary, 4px, 70%, auto, 0, -10px, auto);
+        }
+    }
+
+    .about-text {
+        border: 1px solid transparent;
+        transition: ease-in-out 1s;
+
+        &:hover {
+            background-color: $primary  !important;
+            border: 1px solid $white;
+
+            p {
+                color: $white  !important;
+            }
+        }
+    }
+
+    .index-about-image {
+        padding: 20px 0;
+
+        &::before {
+            @include after-underline($secondary, 4px, 40%, auto, 0, 0px, auto);
+        }
+
+    }
+}
+
+// gigs and tours section start
+.index-gigs-and-tours-sec {
+    padding: 100px 0;
+
+    // @include media-breakpoint-down(sm) {
+    //     display: none;
+    // }
+
+    .tour-event-box {
+        margin: 30px 15px;
+        padding: 3rem;
+
+        @include media-breakpoint-down(sm) {
+            margin: 0px;
+            padding: 1rem;
+        }
+
+        &.slick-current {
+            background: $info;
+            padding: 4rem 3rem;
+            margin-top: 10px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 1rem;
+            }
+        }
+
+        .text-border-bottom {
+            border-bottom: 2px solid rgba($color: $white, $alpha: 0.2);
+        }
+    }
+
+
+}
+
+// New Album available in stores section start
+.index-new-album-sec {
+    overflow-x: hidden;
+    @include bg-properties(url(../../assets/images/index/new-album-banner-img.jpg));
+
+    position: relative;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        @include bg-properties(none);
+        background-color: rgba($color: $primary, $alpha: 0.6);
+    }
+
+    .new-album-text {
+        z-index: 99;
+    }
+
+}
+
+// Band History section start
+.index-band-history {
+    padding-bottom: 150px !important;
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 0px !important;
+    }
+
+    h2 {
+        &.heading-1 {
+            &::after {
+                @include after-underline ($secondary, 4px, 50%, auto, 0, -10px, auto);
+            }
+        }
+    }
+
+    .history-images-container {
+        // border: 1px solid green;
+
+        .double-image {
+            width: 50%;
+            text-align: center;
+
+            .image-box {
+                margin-bottom: 10px;
+
+                img {
+                    transition: ease-in .5s;
+
+                    &:hover {
+                        filter: contrast(200%);
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .single-image {
+            width: 40%;
+
+            .image-box {
+                margin-bottom: 10px;
+
+                img {
+                    transition: ease-in .5s;
+
+                    &:hover {
+                        filter: contrast(200%);
+                    }
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+    }
+
+    .year-wise-data {
+        position: relative;
+        padding-bottom: 100px;
+
+        @include media-breakpoint-down(md) {
+            padding-bottom: 40px;
+        }
+
+        &.year-wise-data-2 {
+            &::before {
+                height: 180%;
+            }
+        }
+
+        // largest vertical line 
+        &::before {
+            @include after-underline ($secondary, 135%, 1px, -20%, auto, auto, -1px);
+            z-index: 1;
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+
+
+
+        .last {
+            &::after {
+                @include after-underline ($secondary, 10px, 10px, auto, auto, -15%, -0.7%);
+
+                @include media-breakpoint-down(xl) {
+                    bottom: -16%;
+                    left: -1%;
+                }
+
+                @include media-breakpoint-between(md, lg) {
+                    left: -1.5%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+
+        .date-text {
+
+            // line
+            &::before {
+                @include after-underline ($secondary, 1px, 5%, 4.2%, auto, auto, 0%);
+
+                @include media-breakpoint-down(xl) {
+                    width: 8%;
+                    top: 3.2%;
+                }
+
+                @include media-breakpoint-between(md, lg) {
+                    top: 3%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+
+
+
+            // box
+            &::after {
+                @include after-underline ($secondary, 10px, 10px, 2.8%, auto, 0%, -0.8%);
+
+                @include media-breakpoint-down(xl) {
+                    top: 2%;
+                    left: -1%;
+                }
+
+                @include media-breakpoint-between(md, lg) {
+                    left: -1.5%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+
+        }
+
+        &.left-side {
+
+            // largest vertical line 
+            &::before {
+                @include after-underline ($secondary, 165%, 1px, -20%, 0, auto, auto);
+                z-index: 1;
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+
+
+
+            .date-text {
+                &.for-md {
+                    &::before {
+                        @include media-breakpoint-between(md, xl) {
+                            top: 6.09%;
+                        }
+                    }
+
+                    &::after {
+                        @include media-breakpoint-between(md, xl) {
+                            top: 5%;
+                        }
+                    }
+                }
+
+                // line
+                &::before {
+                    @include after-underline ($secondary, 1px, 5%, 8.5%, 0, auto, auto);
+
+                    @include media-breakpoint-down(xl) {
+                        width: 8%;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        display: none;
+                    }
+                }
+
+                // box
+                &::after {
+                    @include after-underline ($secondary, 10px, 10px, 7%, -4px, 0%, auto);
+
+                    @include media-breakpoint-down(md) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .year-number-circle {
+        position: relative;
+
+
+        .year {
+            padding: 50px 35px;
+            transition: ease-in-out 0.5s;
+            background-color: $primary;
+            position: relative;
+            z-index: 99;
+            box-shadow: 0 0 0 0px $secondary inset;
+
+            @include media-breakpoint-down(sm) {
+                padding: 30px 17px;
+            }
+
+            &:hover {
+                box-shadow: 0 0 0 3em $secondary inset;
+            }
+        }
+    }
+
+    .video-image {
+        .play-btn {
+            svg {
+                top: 30%;
+                right: 0;
+                left: 0;
+                bottom: auto;
+                display: inline-block;
+                margin: 0 auto;
+
+                path {
+                    transition: ease-in-out 1s;
+                    fill: $white;
+                }
+
+                circle {
+                    transition: ease-in-out 1s;
+                    stroke: $white;
+                }
+
+            }
+        }
+
+        &:hover {
+            .play-btn {
+                svg {
+                    path {
+                        fill: $secondary;
+                    }
+
+                    circle {
+                        stroke: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Listen to our Latest Releases section start
+.index-listen-our-latest-sec {
+    margin-top: -1px;
+
+    h2 {
+        &.heading-1 {
+            &::after {
+                @include after-underline ($secondary, 4px, 25%, auto, 0, -10px, auto)
+            }
+        }
+    }
+
+    .listen-latest-card {
+
+        &:hover {
+            .text-data {
+                opacity: 1;
+            }
+        }
+
+        .text-data {
+            transition: ease-in-out 0.7s;
+            background: rgba($color: $secondary, $alpha: 0.7);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            max-width: 361px;
+            opacity: 0;
+
+            .heading {
+                &::after {
+                    @include after-underline ($white, 4px, 20%, auto, 0, -10px, 0);
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+// Merchandise section start
+.index-merchandise-sec {
+    h2 {
+        &.heading-1 {
+            &::after {
+                @include after-underline ($secondary, 4px, 45%, auto, 0, -10px, auto)
+            }
+        }
+    }
+}
+
+// testimonial section start
+.testimonial-sec {
+    .carousel-indicators {
+        bottom: -10%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        background-color: #314A64;
+
+        &.active {
+            background-color: $secondary;
+        }
+    }
+
+    .testimonial-item {
+        padding: 50px 70px;
+
+        .quot-image {
+            top: 0;
+            left: 0;
+            z-index: 0;
+
+            @include media-breakpoint-down(xl) {
+                width: 20%;
+                top: 5%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 15%;
+                top: 10%;
+                left: 2%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 20%;
+                left: 3%;
+                top: 13%;
+            }
+        }
+
+        .testimonial-para {
+            z-index: 1;
+        }
+
+
+
+        @include media-breakpoint-down(sm) {
+            padding: 50px 40px;
+
+        }
+    }
+}

@@ -1,0 +1,57 @@
+// mixin for background properties
+@mixin bg-properties ($image) {
+    background-image: $image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// mixin for after, before underlines and other content
+@mixin after-underline ($color, $hight, $width, $top, $right, $bottom, $left) {
+    position: absolute;
+    content: "";
+    background-color: $color;
+    height: $hight;
+    width: $width;
+    right: $right;
+    left: $left;
+    top: $top;
+    bottom: $bottom;
+}
+
+// banner padding
+@mixin banner-padding {
+    padding: 200px 0 180px 0;
+
+    @include media-breakpoint-down(lg) {
+        padding:180px 0 160px 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 120px 0 100px 0;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 140px 0 40px 0;
+    }
+    .banner-heading {
+        text-shadow: 0px 5.70667px 62.7733px #000000;
+    }
+
+}
+
+@mixin services-section {
+    padding: 7% 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 20% 0;
+        background-position: center;
+    }
+
+    .heading {
+        &.after-underline {
+            &::after {
+                @include after-underline($secondary, 4px, 40%, auto, 0, -15px, auto);
+            }
+        }
+    }
+}

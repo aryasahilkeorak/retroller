@@ -1,0 +1,77 @@
+@mixin btns-border ($color) {
+    border: 1px solid $color;
+}
+
+.btn-effect,
+.cart-clear-button-rounded {
+    box-shadow: 0 0 0 3em $secondary inset;
+    transition: ease-in 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 0 0px $secondary inset;
+    }
+}
+
+// btn hover effect 1
+.btn-effect {
+    @include btns-border($secondary);
+
+    &:hover {
+        background-color: $dark;
+        @include btns-border($dark);
+    }
+}
+
+// btn hover effect 2
+.cart-clear-button-rounded {
+    @include btns-border($secondary);
+    transition: ease-in 0.3s;
+
+    &:hover {
+        @include btns-border($white);
+        color: $white;
+    }
+
+    &:focus {
+        box-shadow: 0 0 5px 3px $secondary;
+        border: 0;
+    }
+
+}
+
+// btn hover effect 3
+.hover-secondary {
+    transition: ease-in 0.5s;
+    box-shadow: 0 0 0 0px $secondary inset;
+
+    &:hover {
+        box-shadow: 0 0 0 3em $secondary inset;
+        border-color: $secondary;
+        color: $white;
+    }
+}
+
+// btn hover effect 4
+.btn-light-hover {
+    @include btns-border(transparent);
+    transition: ease-out 0.7s;
+    box-shadow: 0 0 0 0px $primary inset;
+
+    &:hover {
+        color: $white;
+        box-shadow: 0 0 0 3em $primary inset;
+    }
+}
+
+.btn-primary {
+    &.btn-light-hover {
+        @include btns-border($white);
+        transition: ease-out 0.7s;
+        box-shadow: 0 0 0 0px $white inset;
+
+        &:hover {
+            color: $primary;
+            box-shadow: 0 0 0 3em $white inset;
+        }
+    }
+}

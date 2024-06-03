@@ -1,0 +1,170 @@
+.about-hero-banner {
+    @include bg-properties(url(../../assets/images/about/about-hero-banner.png));
+    @include banner-padding;
+}
+
+.about-derricks-story-section {
+    @include bg-properties(url(../../assets/images/about/derricks-story-bg.png));
+    @include banner-padding;
+
+    .about-derricks-story-text {
+        .after-underline {
+            &::after {
+                @include after-underline($secondary, 4px, 30%, auto, 0, -15px, auto);
+            }
+        }
+    }
+}
+
+.about-tour-dates-sec {
+    @include bg-properties(url(../../assets/images/about/tour-dates-bg.png));
+    padding: 5% 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 15% 0;
+    }
+
+    .tour-dates-heading {
+        .after-underline {
+            &::after {
+                // after-underline ($color, $hight, $width, $top, $right, $bottom, $left)
+                @include after-underline($secondary, 4px, 50%, auto, 0, -10px, auto);
+            }
+        }
+
+        .tour-dates {
+            &.table-responsive {
+                margin: 70px 0;
+
+                .table {
+                    &:hover {
+                        color: $white;
+                    }
+
+                    tr {
+                        border-bottom: 1px dashed rgba($color : $white, $alpha: 0.2) !important;
+
+
+                        &:hover {
+                            background: $secondary;
+
+                        }
+
+                        td {
+                            min-width: 200px;
+                            padding: 20px 10px;
+
+                            &:nth-child(1) {
+                                text-align: start;
+                            }
+
+                            &:nth-child(2) {
+                                text-align: start;
+                            }
+
+                            &:nth-child(3) {
+                                text-align: center;
+                            }
+
+                            &:nth-child(4) {
+                                text-align: end;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+
+
+    }
+}
+
+.about-numbers-counts-sec {
+    padding: 10% 0;
+
+    .hero-number-row {
+        margin-top: 5%;
+        overflow-x: hidden;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 10%;
+        }
+
+        .hero-work-numbers {
+            padding: 0 150px;
+            border-right: 1px solid rgba($color: $dark, $alpha: 0.7);
+
+            @include media-breakpoint-down(xl) {
+                padding: 0 100px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding: 30px 0px;
+                border-right: 0;
+            }
+
+        }
+    }
+}
+
+.about-overview-grid {
+    margin: -1px 0;
+    .after-underline {
+        display: inline-block;
+        margin-bottom: 30px;
+
+        &::after {
+            @include after-underline($secondary, 4px, auto, auto, 0, -15px, auto);
+        }
+
+        &.one {
+            &::after {
+                width: 60%;
+            }
+        }
+
+        &.two {
+            &::after {
+                width: 48%;
+            }
+        }
+
+        &.three {
+            &::after {
+                width: 30%;
+
+                @include media-breakpoint-down(sm) {
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+
+
+    }
+    .grid-text{
+        .grid-para{
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+    }
+}
+
+.about-latest-releases-sec {
+    @include services-section;
+
+    .latest-releases-card {
+        background: #041426;
+        box-shadow: 0px 4px 44px rgba(15, 51, 91, 0.18);
+        max-width: 260px;
+    }
+}
+
+
+

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap 5 and all custom css files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font-awesome 6 cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light position-fixed w-100 top-0 start-0 end-0" data-aos="fade-down"
+            data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html"><img src="./assets/images/header-logo.png" alt="header-logo"
+                        class="img-fluid" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" type="button" data-bs-toggle="modal"
+                                data-bs-target="#gridSystemModal">Login</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-2 text-center text-xl-start d-none d-xl-inline-block">
+                            <a class="nav-link nav-s-media-links position-relative" href="#"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li
+                            class="nav-item ms-0 ms-lg-2 text-center text-xl-start me-0 me-md-4 d-none d-xl-inline-block">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li
+                            class="nav-item ms-0 ms-lg-2 text-center text-xl-start d-flex justify-content-center d-xl-none">
+                            <a class="nav-link nav-s-media-links border-start-0 position-relative px-3 d-xl-none"
+                                href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="nav-link px-3 " href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero banner section start -->
+    <section class="services-hero-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <h1 class="fs-140 ff-irish text-white banner-heading">Services</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero banner section end -->
+
+    <!-- Services We Offer section start -->
+    <section class="services-we-offer-sec bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h2
+                            class="heading after-underline ff-zilla fw-lighter fs-44 d-inline-block position-relative mb-0 mb-lg-3 mb-xl-4">
+                            Services We Offer</h2>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#"
+                        class="text-decoration-none services-card p-4 p-lg-5 d-inline-block mb-4 mb-lg-3 mb-xl-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="icon mb-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.25 31.875C3.07648 31.875 2.125 30.9246 2.125 29.75V17C2.125 15.8254 3.07648 14.875 4.25 14.875C5.42352 14.875 6.375 15.8254 6.375 17V29.75C6.375 30.9246 5.42352 31.875 4.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.75 31.875C11.5765 31.875 10.625 30.9246 10.625 29.75V4.25C10.625 3.07544 11.5765 2.125 12.75 2.125C13.9235 2.125 14.875 3.07544 14.875 4.25V29.75C14.875 30.9246 13.9235 31.875 12.75 31.875Z"
+                                            fill="#F83E2A" />
+                                        <path
+                                            d="M21.25 31.875C20.0754 31.875 19.125 30.9246 19.125 29.75V21.25C19.125 20.0754 20.0754 19.125 21.25 19.125C22.4246 19.125 23.375 20.0754 23.375 21.25V29.75C23.375 30.9246 22.4246 31.875 21.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.75 31.875C28.5754 31.875 27.625 30.9246 27.625 29.75V12.75C27.625 11.5754 28.5754 10.625 29.75 10.625C30.9246 10.625 31.875 11.5754 31.875 12.75V29.75C31.875 30.9246 30.9246 31.875 29.75 31.875Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="ff-zilla fs-3 card-heading">Music Recording</h3>
+                                <p class="fs-14 fw-lighter text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- card 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#"
+                        class="text-decoration-none services-card p-4 p-lg-5 d-inline-block mb-4 mb-lg-3 mb-xl-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="icon mb-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.25 31.875C3.07648 31.875 2.125 30.9246 2.125 29.75V17C2.125 15.8254 3.07648 14.875 4.25 14.875C5.42352 14.875 6.375 15.8254 6.375 17V29.75C6.375 30.9246 5.42352 31.875 4.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.75 31.875C11.5765 31.875 10.625 30.9246 10.625 29.75V4.25C10.625 3.07544 11.5765 2.125 12.75 2.125C13.9235 2.125 14.875 3.07544 14.875 4.25V29.75C14.875 30.9246 13.9235 31.875 12.75 31.875Z"
+                                            fill="#F83E2A" />
+                                        <path
+                                            d="M21.25 31.875C20.0754 31.875 19.125 30.9246 19.125 29.75V21.25C19.125 20.0754 20.0754 19.125 21.25 19.125C22.4246 19.125 23.375 20.0754 23.375 21.25V29.75C23.375 30.9246 22.4246 31.875 21.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.75 31.875C28.5754 31.875 27.625 30.9246 27.625 29.75V12.75C27.625 11.5754 28.5754 10.625 29.75 10.625C30.9246 10.625 31.875 11.5754 31.875 12.75V29.75C31.875 30.9246 30.9246 31.875 29.75 31.875Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="ff-zilla fs-3 card-heading">Post Production</h3>
+                                <p class="fs-14 fw-lighter text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--  card 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#"
+                        class="text-decoration-none services-card p-4 p-lg-5 d-inline-block mb-4 mb-lg-3 mb-xl-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="icon mb-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.25 31.875C3.07648 31.875 2.125 30.9246 2.125 29.75V17C2.125 15.8254 3.07648 14.875 4.25 14.875C5.42352 14.875 6.375 15.8254 6.375 17V29.75C6.375 30.9246 5.42352 31.875 4.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.75 31.875C11.5765 31.875 10.625 30.9246 10.625 29.75V4.25C10.625 3.07544 11.5765 2.125 12.75 2.125C13.9235 2.125 14.875 3.07544 14.875 4.25V29.75C14.875 30.9246 13.9235 31.875 12.75 31.875Z"
+                                            fill="#F83E2A" />
+                                        <path
+                                            d="M21.25 31.875C20.0754 31.875 19.125 30.9246 19.125 29.75V21.25C19.125 20.0754 20.0754 19.125 21.25 19.125C22.4246 19.125 23.375 20.0754 23.375 21.25V29.75C23.375 30.9246 22.4246 31.875 21.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.75 31.875C28.5754 31.875 27.625 30.9246 27.625 29.75V12.75C27.625 11.5754 28.5754 10.625 29.75 10.625C30.9246 10.625 31.875 11.5754 31.875 12.75V29.75C31.875 30.9246 30.9246 31.875 29.75 31.875Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="ff-zilla fs-3 card-heading">Master Sound</h3>
+                                <p class="fs-14 fw-lighter text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- card 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#"
+                        class="text-decoration-none services-card p-4 p-lg-5 d-inline-block mb-4 mb-lg-3 mb-xl-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="icon mb-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.25 31.875C3.07648 31.875 2.125 30.9246 2.125 29.75V17C2.125 15.8254 3.07648 14.875 4.25 14.875C5.42352 14.875 6.375 15.8254 6.375 17V29.75C6.375 30.9246 5.42352 31.875 4.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.75 31.875C11.5765 31.875 10.625 30.9246 10.625 29.75V4.25C10.625 3.07544 11.5765 2.125 12.75 2.125C13.9235 2.125 14.875 3.07544 14.875 4.25V29.75C14.875 30.9246 13.9235 31.875 12.75 31.875Z"
+                                            fill="#F83E2A" />
+                                        <path
+                                            d="M21.25 31.875C20.0754 31.875 19.125 30.9246 19.125 29.75V21.25C19.125 20.0754 20.0754 19.125 21.25 19.125C22.4246 19.125 23.375 20.0754 23.375 21.25V29.75C23.375 30.9246 22.4246 31.875 21.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.75 31.875C28.5754 31.875 27.625 30.9246 27.625 29.75V12.75C27.625 11.5754 28.5754 10.625 29.75 10.625C30.9246 10.625 31.875 11.5754 31.875 12.75V29.75C31.875 30.9246 30.9246 31.875 29.75 31.875Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="ff-zilla fs-3 card-heading">Remote Recording</h3>
+                                <p class="fs-14 fw-lighter text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- card 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#"
+                        class="text-decoration-none services-card p-4 p-lg-5 d-inline-block mb-4 mb-lg-3 mb-xl-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="icon mb-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.25 31.875C3.07648 31.875 2.125 30.9246 2.125 29.75V17C2.125 15.8254 3.07648 14.875 4.25 14.875C5.42352 14.875 6.375 15.8254 6.375 17V29.75C6.375 30.9246 5.42352 31.875 4.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.75 31.875C11.5765 31.875 10.625 30.9246 10.625 29.75V4.25C10.625 3.07544 11.5765 2.125 12.75 2.125C13.9235 2.125 14.875 3.07544 14.875 4.25V29.75C14.875 30.9246 13.9235 31.875 12.75 31.875Z"
+                                            fill="#F83E2A" />
+                                        <path
+                                            d="M21.25 31.875C20.0754 31.875 19.125 30.9246 19.125 29.75V21.25C19.125 20.0754 20.0754 19.125 21.25 19.125C22.4246 19.125 23.375 20.0754 23.375 21.25V29.75C23.375 30.9246 22.4246 31.875 21.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.75 31.875C28.5754 31.875 27.625 30.9246 27.625 29.75V12.75C27.625 11.5754 28.5754 10.625 29.75 10.625C30.9246 10.625 31.875 11.5754 31.875 12.75V29.75C31.875 30.9246 30.9246 31.875 29.75 31.875Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="ff-zilla fs-3 card-heading">DVD Production</h3>
+                                <p class="fs-14 fw-lighter text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- card 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#"
+                        class="text-decoration-none services-card p-4 p-lg-5 d-inline-block mb-4 mb-lg-3 mb-xl-5">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="icon mb-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.25 31.875C3.07648 31.875 2.125 30.9246 2.125 29.75V17C2.125 15.8254 3.07648 14.875 4.25 14.875C5.42352 14.875 6.375 15.8254 6.375 17V29.75C6.375 30.9246 5.42352 31.875 4.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M12.75 31.875C11.5765 31.875 10.625 30.9246 10.625 29.75V4.25C10.625 3.07544 11.5765 2.125 12.75 2.125C13.9235 2.125 14.875 3.07544 14.875 4.25V29.75C14.875 30.9246 13.9235 31.875 12.75 31.875Z"
+                                            fill="#F83E2A" />
+                                        <path
+                                            d="M21.25 31.875C20.0754 31.875 19.125 30.9246 19.125 29.75V21.25C19.125 20.0754 20.0754 19.125 21.25 19.125C22.4246 19.125 23.375 20.0754 23.375 21.25V29.75C23.375 30.9246 22.4246 31.875 21.25 31.875Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.75 31.875C28.5754 31.875 27.625 30.9246 27.625 29.75V12.75C27.625 11.5754 28.5754 10.625 29.75 10.625C30.9246 10.625 31.875 11.5754 31.875 12.75V29.75C31.875 30.9246 30.9246 31.875 29.75 31.875Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="ff-zilla fs-3 card-heading">Voiceover</h3>
+                                <p class="fs-14 fw-lighter text-gray-500">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Services We Offer section end -->
+
+    <!-- Testimonials section start -->
+    <section class="services-testimonial-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h2
+                            class="heading after-underline ff-zilla fw-lighter fs-44 d-inline-block position-relative mb-0 mb-lg-3 mb-xl-4">
+                            Testimonials</h2>
+                    </div>
+                </div>
+
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-10 col-lg-9">
+                                    <div class="text-center">
+                                        <img src="./assets/images/services/left-quote.svg" alt="left-quote.svg"
+                                            class="img-fluid">
+                                        <p class="mt-4 fs-6 fw-lighter">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit, sed do
+                                            eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat
+                                            cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/images/services/user-img.png" alt="user-img.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="ms-3 text-start">
+                                                <p class="mb-0 fs-3 ff-zilla fw-semibold">Sadie Sink</p>
+                                                <p class="mb-0 fs-14 fw-normal">Singer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-10 col-lg-9">
+                                    <div class="text-center">
+                                        <img src="./assets/images/services/left-quote.svg" alt="left-quote.svg"
+                                            class="img-fluid">
+                                        <p class="mt-4 fs-6 fw-lighter">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit, sed do
+                                            eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat
+                                            cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/images/services/user-img.png" alt="user-img.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="ms-3 text-start">
+                                                <p class="mb-0 fs-3 ff-zilla fw-semibold">Sadie Sink</p>
+                                                <p class="mb-0 fs-14 fw-normal">Singer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-10 col-lg-9">
+                                    <div class="text-center">
+                                        <img src="./assets/images/services/left-quote.svg" alt="left-quote.svg"
+                                            class="img-fluid">
+                                        <p class="mt-4 fs-6 fw-lighter">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit, sed do
+                                            eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat
+                                            cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/images/services/user-img.png" alt="user-img.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="ms-3 text-start">
+                                                <p class="mb-0 fs-3 ff-zilla fw-semibold">Sadie Sink</p>
+                                                <p class="mb-0 fs-14 fw-normal">Singer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials section end -->
+
+    <!-- Our Packages section start -->
+    <section class="services-our-packages-sec bg-primary">
+        <div class="container">
+            <div class="row g-lg-0 justify-content-center">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h2
+                            class="fs-44 fw-lighter ff-zilla d-inline-block position-relative heading after-underline mb-3 mb-lg-4 mb-xl-5">
+                            Our Packages</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row g-0 justify-content-end">
+                        <div class="col-lg-10">
+                            <div class="package-card text-center p-5 rounded-2 mt-0 mt-lg-4 mb-4">
+                                <div class="py-4">
+                                    <h4 class="ff-roboto fs-6 text-secondary fw-normal">STANDARD</h4>
+                                    <h5 class="ff-zilla fw-lighter fs-49">$550</h5>
+                                    <h6 class="fs-12 text-uppercase text-gray-500">FOR 5 HOURS</h6>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Full Mobile DJ System</p>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Quality Sound System</p>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">2 Wireless Microphones</p>
+                                    <p class="fs-18 fw-normal py-3 m-0">Basic Light Show</p>
+                                    <a href="#"
+                                        class="btn btn-light btn-light-hover rounded-0 fs-14 fw-500 d-inline-block mt-4 px-3">GET
+                                        STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row g-0 justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="package-card text-center bg-secondary p-5 rounded-2 mb-4">
+                                <div class="py-4">
+                                    <h4 class="ff-roboto fs-6 text-white fw-normal">STANDARD</h4>
+                                    <h5 class="ff-zilla fw-lighter fs-49">$750</h5>
+                                    <h6 class="fs-12 text-uppercase text-gray-500">FOR 10 HOURS</h6>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Experienced MC</p>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Quality Sound System</p>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Laser Light Show</p>
+                                    <p class="fs-18 fw-normal py-3 m-0">3 Flatscreens & Projectors</p>
+                                    <a href="#"
+                                        class="btn btn-light btn-light-hover rounded-0 fs-14 fw-500 d-inline-block mt-4 px-3">GET
+                                        STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="row g-0 justify-content-start">
+                        <div class="col-lg-10">
+                            <div class="package-card text-center p-5 rounded-2 mt-0 mt-lg-4 mb-4">
+                                <div class="py-4">
+                                    <h4 class="ff-roboto fs-6 text-secondary fw-normal">STANDARD</h4>
+                                    <h5 class="ff-zilla fw-lighter fs-49">$950</h5>
+                                    <h6 class="fs-12 text-uppercase text-gray-500">FOR 5 HOURS</h6>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">MC & Vocalist</p>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Quality Sound System</p>
+                                    <p class="fs-18 fw-normal py-3 m-0 border-dashed-bottom">Advanced Light Show</p>
+                                    <p class="fs-18 fw-normal py-3 m-0">9 Flatscreens & Projectors</p>
+                                    <a href="#"
+                                        class="btn btn-light btn-light-hover rounded-0 fs-14 fw-500 d-inline-block mt-4 px-3">GET
+                                        STARTED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Our Packages section end -->
+
+    <!-- footer start -->
+    <footer class="footer bg-secondary py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- footer nav links -->
+                <div class="col-md-10">
+                    <div>
+                        <ul
+                            class="footer-nav list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-start mb-2">
+                            <li class="footer-nav-item me-0 me-3 my-2">
+                                <a href="./index.html" class="footer-nav-link active">Home</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./about.html" class="footer-nav-link">About Us</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./services.html" class="footer-nav-link">Services</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./blog.html" class="footer-nav-link">Blog</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./shop.html" class="footer-nav-link">Shop</a>
+                            </li>
+                            <li class="footer-nav-item ms-3 my-2">
+                                <a href="./contact.html" class="footer-nav-link">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- footer social media icons -->
+                <div class="col-md-2">
+                    <ul
+                        class="footer-nav list-unstyled d-flex align-items-center mb-2 justify-content-center justify-content-md-end">
+                        <li class="footer-nav-item me-3">
+                            <a class="footer-nav-link nav-s-media-links border-start-0 position-relative" href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-nav-item mx-3">
+                            <a class="footer-nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- copyright text -->
+                <div class="col-12">
+                    <div class="text-center text-md-start mt-3 mt-md-0">
+                        <a href="#" class="text-decoration-none text-white fs-6 fw-500">© 2022 Copyright by
+                            Retroller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- login modal section start -->
+    <section class="login-modal-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 col-11">
+                    <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel"
+                        style="display: none;" aria-hidden="true">
+
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-primary">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gridModalLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#">
+                                        <input type="text" class="form-control mb-3"
+                                            placeholder="Username / Mobile Number">
+                                        <input type="password" name="password" class="form-control mb-3"
+                                            placeholder="Password">
+                                        <div class="d-flex align-items-center checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <p class="fs-10 fw-lighter text-white mb-0 ms-2">I have read and agree to
+                                                the website terms
+                                                and
+                                                conditions *</p>
+                                        </div>
+                                        <button type="button"
+                                            class="w-100 btn btn-outline-secondary rounded-0 px-4 hover-secondary mb-2 fw-bold">LOG
+                                            IN</button>
+                                        <div class="text-center mb-2">
+                                            <span>OR</span>
+                                        </div>
+                                        <button type="button"
+                                            class="w-100 btn btn-light btn-light-hover rounded-0  fw-500 fw-bold mb-3">FORGOT
+                                            PASSWORD</button>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- all script files and cdns -->
+    <!-- bootstrap script files -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- aos animation script file -->
+    <script src="./node_modules/aos/src/js/aos.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery and cdn for numbers counting -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/counting.js"></script>
+
+    <!-- script for audio -->
+    <script src="./assets/js/audio.js"></script>
+
+    <!-- slick carousel cdn -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- slick all scripts -->
+    <script src="./vendors/slick/slick/slick.min.js"></script>
+
+    <!-- slick center script  -->
+    <script src="./assets/js/slick-center.js"></script>
+
+    <!-- filter range script file -->
+    <script src="./assets/js/range.js"></script>
+</body>
+
+</html>

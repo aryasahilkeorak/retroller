@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap 5 and all custom css files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font-awesome 6 cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light position-fixed w-100 top-0 start-0 end-0" data-aos="fade-down"
+            data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html"><img src="./assets/images/header-logo.png" alt="header-logo"
+                        class="img-fluid" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" type="button" data-bs-toggle="modal"
+                                data-bs-target="#gridSystemModal">Login</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-2 text-center text-xl-start d-none d-xl-inline-block">
+                            <a class="nav-link nav-s-media-links position-relative" href="#"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li
+                            class="nav-item ms-0 ms-lg-2 text-center text-xl-start me-0 me-md-4 d-none d-xl-inline-block">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li
+                            class="nav-item ms-0 ms-lg-2 text-center text-xl-start d-flex justify-content-center d-xl-none">
+                            <a class="nav-link nav-s-media-links border-start-0 position-relative px-3 d-xl-none"
+                                href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="nav-link px-3 " href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- login modal section start -->
+    <section class="login-modal-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 col-11">
+                    <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel"
+                        style="display: none;" aria-hidden="true">
+
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-primary">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gridModalLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#">
+                                        <input type="text" class="form-control mb-3"
+                                            placeholder="Username / Mobile Number">
+                                        <input type="password" name="password" class="form-control mb-3"
+                                            placeholder="Password">
+                                        <div class="d-flex align-items-center checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <p class="fs-10 fw-lighter text-white mb-0 ms-2">I have read and agree to
+                                                the website terms
+                                                and
+                                                conditions *</p>
+                                        </div>
+                                        <button type="button"
+                                            class="w-100 btn btn-outline-secondary rounded-0 px-4 hover-secondary mb-2 fw-bold">LOG
+                                            IN</button>
+                                        <div class="text-center mb-2">
+                                            <span>OR</span>
+                                        </div>
+                                        <button type="button"
+                                            class="w-100 btn btn-light btn-light-hover rounded-0  fw-500 fw-bold mb-3">FORGOT
+                                            PASSWORD</button>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- hero banner section start -->
+    <section class="blog-hero-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <h1 class="fs-140 ff-irish text-white banner-heading">Blog</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero banner section end -->
+
+    <!-- blog main blogs section start -->
+    <div class="blog-main-blogs-section bg-primary">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- blogs list section -->
+                <div class="col-xl-6 col-lg-7">
+
+                    <article class="blog-posts">
+
+                        <!-- BLOG POST 1 -->
+                        <div class="blogs-box mb-5" data-aos="fade-up" data-aos-duration="1000">
+                            <!-- blog image -->
+                            <div class="blog-img ">
+                                <img src="./assets/images/blog/blog-post-1.png" alt="blog-post-1" class="img-fluid">
+                            </div>
+                            <!-- blog text data -->
+                            <div class="blog-text-data text-center text-md-start">
+                                <p class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head mt-5 mb-0">
+                                    Musical
+                                    Tour</p>
+                                <h2 class="text-white fw-lighter ff-zilla fs-44 mt-1">Touring Show</h2>
+                                <p class="fs-6 text-white fw-lighter">Lorem Ipsn gravida nibh vel velit auctor
+                                    aliqunean sollicitudinlorem quis
+                                    bibendum auci elit consequat ipsutis sem nibh id elit.Duis sed odio sit amet
+                                    nibh vulputate cursus a sit amet mauris. Morbiaccumsan ipsum velit. Nam nec
+                                    tellus a odio tinciduntauctor a ornare odio. </p>
+                            </div>
+
+                            <!-- author and other details -->
+                            <div
+                                class="blog-author-box border-top-dashed d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-3 mt-2">
+                                <div class="name-n-date d-flex align-items-center">
+                                    <!-- author image -->
+                                    <img src="./assets/images/blog/blog-author-1.png" alt="blog-author-1.png"
+                                        class="img-fluid" />
+
+                                    <!-- author name -->
+                                    <span
+                                        class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-inline-block ms-3 me-2">
+                                        by sadie sink
+                                    </span>
+
+                                    <!-- post date -->
+                                    <div class="d-inline-block mx-2">
+                                        <span
+                                            class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-flex align-items-center">
+                                            <img src="./assets/images/blog/calendar.svg" alt="calendar.svg"
+                                                class="img-fluid mx-2">
+                                            july 26, 2022</span>
+                                    </div>
+
+                                    <!-- share button -->
+                                    <button type="button"
+                                        class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-inline-block mx-3">
+                                        <img src="./assets/images/blog/share.svg" alt="share.svg" class="img-fluid">
+                                    </button>
+                                </div>
+
+                                <div class="read-more mt-3 mt-md-0">
+                                    <a href="./blog-detail.html"
+                                        class="btn btn-effect text-white fs-18 ff-zilla fw-semibold px-4 py-2">Read
+                                        More</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- BLOG POST 2 -->
+                        <div class="blogs-box mb-5" data-aos="fade-up" data-aos-duration="1000">
+                            <!-- blog image -->
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog-post-2.png" alt="blog-post-2" class="img-fluid">
+                            </div>
+                            <!-- blog text data -->
+                            <div class="blog-text-data text-center text-md-start">
+                                <p class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head mt-5 mb-0">
+                                    Musical
+                                    Tour</p>
+                                <h2 class="text-white fw-lighter ff-zilla fs-44 mt-1">THE ONE AND ONLY</h2>
+                                <p class="fs-6 text-white fw-lighter">Lorem Ipsn gravida nibh vel velit auctor
+                                    aliqunean sollicitudinlorem quis
+                                    bibendum auci elit consequat ipsutis sem nibh id elit.Duis sed odio sit amet
+                                    nibh vulputate cursus a sit amet mauris. Morbiaccumsan ipsum velit. Nam nec
+                                    tellus a odio tinciduntauctor a ornare odio. </p>
+                            </div>
+
+                            <!-- author and other details -->
+                            <div
+                                class="blog-author-box border-top-dashed d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-3 mt-2">
+                                <div class="name-n-date d-flex align-items-center">
+                                    <!-- author image -->
+                                    <img src="./assets/images/blog/blog-author-1.png" alt="blog-author-1.png"
+                                        class="img-fluid" />
+
+                                    <!-- author name -->
+                                    <span
+                                        class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-inline-block ms-3 me-2">
+                                        by sadie sink
+                                    </span>
+
+                                    <!-- post date -->
+                                    <div class="d-inline-block mx-2">
+                                        <span
+                                            class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-flex align-items-center">
+                                            <img src="./assets/images/blog/calendar.svg" alt="calendar.svg"
+                                                class="img-fluid mx-2">
+                                            july 26, 2022</span>
+                                    </div>
+
+                                    <!-- share button -->
+                                    <button type="button"
+                                        class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-inline-block mx-3">
+                                        <img src="./assets/images/blog/share.svg" alt="share.svg" class="img-fluid">
+                                    </button>
+                                </div>
+
+                                <div class="read-more mt-3 mt-md-0">
+                                    <a href="./blog-detail.html"
+                                        class="btn btn-effect text-white fs-18 ff-zilla fw-semibold px-4 py-2">Read
+                                        More</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BLOG POST 3 -->
+                        <div class="blogs-box mb-5" data-aos="fade-up" data-aos-duration="1000">
+                            <!-- blog image -->
+                            <div class="blog-img">
+                                <img src="./assets/images/blog/blog-post-3.png" alt="blog-post-3" class="img-fluid">
+                            </div>
+                            <!-- blog text data -->
+                            <div class="blog-text-data text-center text-md-start">
+                                <p class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head mt-5 mb-0">
+                                    Musical Tour
+                                </p>
+                                <h2 class="text-white fw-lighter ff-zilla fs-44 mt-1">DATES FOR FORTRESS</h2>
+
+                                <p class="fs-6 text-white fw-lighter">Lorem Ipsn gravida nibh vel velit auctor
+                                    aliqunean sollicitudinlorem quis
+                                    bibendum auci elit consequat ipsutis sem nibh id elit.Duis sed odio sit amet
+                                    nibh vulputate cursus a sit amet mauris. Morbiaccumsan ipsum velit. Nam nec
+                                    tellus a odio tinciduntauctor a ornare odio.
+                                </p>
+                            </div>
+
+                            <!-- author and other details -->
+                            <div
+                                class="blog-author-box border-top-dashed d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-3 mt-2">
+                                <div class="name-n-date d-flex align-items-center">
+                                    <!-- author image -->
+                                    <img src="./assets/images/blog/blog-author-1.png" alt="blog-author-1.png"
+                                        class="img-fluid" />
+
+                                    <!-- author name -->
+                                    <span
+                                        class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-inline-block ms-3 me-2">
+                                        by sadie sink
+                                    </span>
+
+                                    <!-- post date -->
+                                    <div class="d-inline-block mx-2">
+                                        <span
+                                            class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-flex align-items-center">
+                                            <img src="./assets/images/blog/calendar.svg" alt="calendar.svg"
+                                                class="img-fluid mx-2">
+                                            july 26, 2022</span>
+                                    </div>
+
+                                    <!-- share button -->
+                                    <button type="button"
+                                        class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head d-inline-block mx-3">
+                                        <img src="./assets/images/blog/share.svg" alt="share.svg" class="img-fluid">
+                                    </button>
+                                </div>
+
+                                <div class="read-more mt-3 mt-md-0">
+                                    <a href="./blog-detail.html"
+                                        class="btn btn-effect text-white fs-18 ff-zilla fw-semibold px-4 py-2">Read
+                                        More</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- sidebar for categories and recent posts -->
+                <div class="col-xl-4 col-lg-5">
+
+                    <aside class="blog-sidebar ps-lg-3 ps-0">
+                        <!-- Categories -->
+                        <div class="blog-categories-section mb-5" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="border-bottom-dashed pb-1 mb-3">
+                                <h3 class="fs-18 ff-zilla text-white text-uppercase">Categories</h3>
+                            </div>
+
+                            <ul class="list-unstyled list-styling">
+                                <li>
+                                    <a href="#">Performances</a>
+                                </li>
+                                <li>
+                                    <a href="#">Records</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Reviews</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shows</a>
+                                </li>
+                                <li>
+                                    <a href="#">Uncategorized</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- latest posts -->
+                        <div class="blog-latest-posts-section mb-5" data-aos="fade-left" data-aos-duration="1000">
+
+                            <div class="border-bottom-dashed pb-1 mb-3">
+                                <h3 class="fs-18 ff-zilla text-white text-uppercase">latest posts</h3>
+                            </div>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <img src="./assets/images/blog/latest-post.png" alt="latest-post.png"
+                                                class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h4 class="fs-14 ff-zilla fw-lighter text-white text-uppercase mb-0">The
+                                                Music
+                                                Of Cream</h4>
+                                            <span class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head">july
+                                                26,
+                                                2022</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <img src="./assets/images/blog/latest-post.png" alt="latest-post.png"
+                                                class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h4 class="fs-14 ff-zilla fw-lighter text-white text-uppercase mb-0">USA
+                                                Tour
+                                            </h4>
+                                            <span class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head">july
+                                                26,
+                                                2022</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <img src="./assets/images/blog/latest-post.png" alt="latest-post.png"
+                                                class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h4 class="fs-14 ff-zilla fw-lighter text-white text-uppercase mb-0">Our
+                                                Backstage</h4>
+                                            <span class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head">july
+                                                26,
+                                                2022</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <img src="./assets/images/blog/latest-post.png" alt="latest-post.png"
+                                                class="img-fluid">
+                                        </div>
+                                        <div>
+                                            <h4 class="fs-14 ff-zilla fw-lighter text-white text-uppercase mb-0">
+                                                ONE-HOUR
+                                                Concert</h4>
+                                            <span class="fs-10 text-gray-600 text-uppercase text-spacing-sub-head">july
+                                                26,
+                                                2022</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Archive -->
+                        <div class="blog-archive-section mb-5" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="border-bottom-dashed pb-1 mb-3">
+                                <h3 class="fs-18 ff-zilla text-white text-uppercase">Archive</h3>
+                            </div>
+
+                            <ul class="list-unstyled list-styling">
+                                <li>
+                                    <a href="#">MARCH 2022</a>
+                                </li>
+                                <li>
+                                    <a href="#">FEBRUARY 2022</a>
+                                </li>
+                                <li>
+                                    <a href="#">JANUARY 2022</a>
+                                </li>
+                                <li>
+                                    <a href="#">DECEMBER 2021</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Follow us -->
+                        <div class="blog-follow-us-section" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="border-bottom-dashed pb-1 mb-3">
+                                <h3 class="fs-18 ff-zilla text-white text-uppercase">Follow &nbsp; us</h3>
+                            </div>
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="blog-tags-section">
+                            <div class="border-bottom-dashed pb-1 mb-3">
+                                <h3 class="fs-18 ff-zilla text-white text-uppercase">Tags</h3>
+                            </div>
+                            <span class="fs-12 text-white text-uppercase">Albums,</span>
+                            <span class="fs-12 text-white text-uppercase">Band,</span>
+                            <span class="fs-12 text-white text-uppercase">Lyrics,</span>
+                            <span class="fs-12 text-white text-uppercase">Metal,</span>
+                            <span class="fs-12 text-white text-uppercase">Music,</span>
+                            <span class="fs-12 text-white text-uppercase">New Reviews,</span>
+                            <span class="fs-12 text-white text-uppercase">Rock</span>
+                        </div>
+
+
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- blog main blogs section end -->
+
+
+    <!-- footer start -->
+    <footer class="footer bg-secondary py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- footer nav links -->
+                <div class="col-md-10">
+                    <div>
+                        <ul
+                            class="footer-nav list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-start mb-2">
+                            <li class="footer-nav-item me-0 me-3 my-2">
+                                <a href="./index.html" class="footer-nav-link active">Home</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./about.html" class="footer-nav-link">About Us</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./services.html" class="footer-nav-link">Services</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./blog.html" class="footer-nav-link">Blog</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./shop.html" class="footer-nav-link">Shop</a>
+                            </li>
+                            <li class="footer-nav-item ms-3 my-2">
+                                <a href="./contact.html" class="footer-nav-link">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- footer social media icons -->
+                <div class="col-md-2">
+                    <ul
+                        class="footer-nav list-unstyled d-flex align-items-center mb-2 justify-content-center justify-content-md-end">
+                        <li class="footer-nav-item me-3">
+                            <a class="footer-nav-link nav-s-media-links border-start-0 position-relative" href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-nav-item mx-3">
+                            <a class="footer-nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- copyright text -->
+                <div class="col-12">
+                    <div class="text-center text-md-start mt-3 mt-md-0">
+                        <a href="#" class="text-decoration-none text-white fs-6 fw-500">© 2022 Copyright by
+                            Retroller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- all script files and cdns -->
+    <!-- bootstrap script files -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- aos animation script file -->
+    <script src="./node_modules/aos/src/js/aos.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery and cdn for numbers counting -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/counting.js"></script>
+
+    <!-- script for audio -->
+    <script src="./assets/js/audio.js"></script>
+
+    <!-- slick carousel cdn -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- slick all scripts -->
+    <script src="./vendors/slick/slick/slick.min.js"></script>
+
+    <!-- slick center script  -->
+    <script src="./assets/js/slick-center.js"></script>
+
+    <!-- filter range script file -->
+    <script src="./assets/js/range.js"></script>
+</body>
+
+</html>

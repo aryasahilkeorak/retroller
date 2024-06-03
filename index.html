@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap 5 and all custom css files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font-awesome 6 cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light position-fixed w-100 top-0 start-0 end-0" data-aos="fade-down"
+            data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html"><img src="./assets/images/header-logo.png" alt="header-logo"
+                        class="img-fluid" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" type="button" data-bs-toggle="modal"
+                                data-bs-target="#gridSystemModal">Login</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-2 text-center text-xl-start d-none d-xl-inline-block">
+                            <a class="nav-link nav-s-media-links position-relative" href="#"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li
+                            class="nav-item ms-0 ms-lg-2 text-center text-xl-start me-0 me-md-4 d-none d-xl-inline-block">
+                            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li
+                            class="nav-item ms-0 ms-lg-2 text-center text-xl-start d-flex justify-content-center d-xl-none">
+                            <a class="nav-link nav-s-media-links border-start-0 position-relative px-3 d-xl-none"
+                                href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="nav-link px-3 " href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- hero banner start -->
+    <section class="index-hero-banner-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="text-center">
+                        <a href="index.html">
+                            <img src="./assets/images/index/banner-brand-name.png" alt="brand-name" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero-number-row" data-aos="fade-up" data-aos-duration="2000">
+                <!-- counting numbers -->
+                <div class="row">
+                    <div class="col-6 col-md-3 d-flex justify-content-center justify-content-lg-start">
+                        <div class="hero-work-numbers ps-0 ps-lg-5">
+                            <h3 class="fs-28 fw-bold ff-zilla m-0">Songs</h3>
+                            <span class="count fs-49 fw-bold text-white">654</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex justify-content-center">
+                        <div class="hero-work-numbers">
+                            <h3 class="fs-28 fw-bold ff-zilla m-0">Weeks</h3>
+                            <span class="count fs-49 fw-bold text-white">15</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex justify-content-center">
+                        <div class="hero-work-numbers">
+                            <h3 class="fs-28 fw-bold ff-zilla m-0">Gigs</h3>
+                            <span class="count fs-49 fw-bold text-white">37</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex justify-content-center justify-content-lg-end">
+                        <div class="hero-work-numbers border-end-0 pe-0 pe-lg-5">
+                            <h3 class="fs-28 fw-bold ff-zilla m-0">Hours</h3>
+                            <span class="count fs-49 fw-bold text-white">1458</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- banner button -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center mt-5">
+                            <a href="#"
+                                class="btn btn-effect px-3 px-md-5 py-2 py-md-3 text-white fs-20 fw-semibold ff-zilla">Tour
+                                Dates &
+                                Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero banner end -->
+
+    <!-- about ret rollers section start -->
+    <section class="index-about-retroller-sec bg-primary pt-4 pt-md-5">
+        <div class="container">
+            <div class="row">
+                <!-- about heading -->
+                <div class="col-lg-3 text-center text-md-start text-lg-center">
+                    <h2
+                        class="about-brand-heading position-relative d-inline-block fs-44 fw-light ff-zilla text-white mb-4 mb-lg-0">
+                        Retrollers</h2>
+                </div>
+
+                <!-- about paragraph, text and image -->
+                <div class="col-lg-9">
+                    <!-- about paragraph -->
+                    <p class="fs-6 fw-light text-white pe-0 pe-lg-4">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+
+                    <!-- about text and image -->
+                    <div class="mt-4">
+                        <div class="row align-items-center">
+                            <!-- about text -->
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="bg-light about-text mb-3 mb-lg-0 py-4 py-xl-5 px-3 px-xl-5">
+
+                                    <p class="fw-light fs-6 text-primary mt-3 mt-xl-4 mb-0 mb-xl-4">Lorem Ipsum is
+                                        simply
+                                        dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                        standard dummy text ever since the 1500s</p>
+                                    <br>
+
+                                    <p class="fw-500 fs-6 text-primary mb-3 mb-xl-5">Lorem Ipsum is simply dummy text of
+                                        the
+                                        printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s</p>
+                                </div>
+                            </div>
+
+                            <!-- about image -->
+                            <div class="col-xl-8 col-lg-6">
+                                <div class="image-zoom-in index-about-image position-relative d-inline-block">
+                                    <img src="./assets/images/index/about-image.png" alt="about-img" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about ret rollers section end -->
+
+    <!-- gigs and tours section start -->
+    <section class="index-gigs-and-tours-sec bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-4 mb-xl-5">
+                        <h2 class="heading-1 text-white">Gigs & Tours 2022</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slick carousel  -->
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="slick-slider-container center my-0 my-xl-3">
+
+                        <!-- item 1 -->
+
+                        <div class="tour-event-box">
+                            <div class="pb-3 text-border-bottom">
+                                <p class="fs-24 fw-light ff-zilla text-white mb-0">JUN, 2022</p>
+                                <p class="fs-44 fw-bold text-white mb-0">04</p>
+                            </div>
+                            <div class="py-3 text-border-bottom">
+                                <p class="fs-5 fw-bold text-white mb-0">LOS ANGELES, US</p>
+                                <p class="fs-6 fw-light text-white mb-4 pe-0 pe-lg-5">ALBUM OF THE YEAR is an album with
+                                    no
+                                    resolution!</p>
+
+                                <a href="#" class="btn btn-outline-light py-2 px-3 fs-18 ff-zilla fw-semibold">Buy
+                                    Tickets</a>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+
+                        <div class="tour-event-box">
+                            <div class="pb-3 text-border-bottom">
+                                <p class="fs-24 fw-light ff-zilla text-white mb-0">JUN, 2022</p>
+                                <p class="fs-44 fw-bold text-white mb-0">17</p>
+                            </div>
+                            <div class="py-3 text-border-bottom">
+                                <p class="fs-5 fw-bold text-white mb-0">BUFF ALO, NY </p>
+                                <p class="fs-6 fw-light text-white mb-0">KeyBank Center</p>
+                                <p class="fs-6 fw-light text-white mb-4">Pre-sale 20th June - Local Time</p>
+
+                                <a href="#" class="btn btn-outline-light py-2 px-3 fs-18 ff-zilla fw-semibold">Buy
+                                    Tickets</a>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+
+                        <div class="tour-event-box">
+                            <div class="pb-3 text-border-bottom">
+                                <p class="fs-24 fw-light ff-zilla text-white mb-0">AUG, 2022</p>
+                                <p class="fs-44 fw-bold text-white mb-0">20</p>
+                            </div>
+                            <div class="py-3 text-border-bottom">
+                                <p class="fs-5 fw-bold text-white mb-0">MONTREAL, QC</p>
+                                <p class="fs-6 fw-light text-white mb-0">Bell Centre</p>
+                                <p class="fs-6 fw-light text-white mb-4">On sale 11am 2nd August</p>
+
+                                <a href="#" class="btn btn-outline-light py-2 px-3 fs-18 ff-zilla fw-semibold">Buy
+                                    Tickets</a>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+
+                        <div class="tour-event-box">
+                            <div class="pb-3 text-border-bottom">
+                                <p class="fs-24 fw-light ff-zilla text-white mb-0">JUN, 2022</p>
+                                <p class="fs-44 fw-bold text-white mb-0">04</p>
+                            </div>
+                            <div class="py-3 text-border-bottom">
+                                <p class="fs-5 fw-bold text-white mb-0">LOS ANGELES, US</p>
+                                <p class="fs-6 fw-light text-white mb-4 pe-0 pe-lg-5">ALBUM OF THE YEAR is an album with
+                                    no
+                                    resolution!</p>
+
+                                <a href="#" class="btn btn-outline-light py-2 px-3 fs-18 ff-zilla fw-semibold">Buy
+                                    Tickets</a>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+
+                        <div class="tour-event-box">
+                            <div class="pb-3 text-border-bottom">
+                                <p class="fs-24 fw-light ff-zilla text-white mb-0">JUN, 2022</p>
+                                <p class="fs-44 fw-bold text-white mb-0">17</p>
+                            </div>
+                            <div class="py-3 text-border-bottom">
+                                <p class="fs-5 fw-bold text-white mb-0">BUFF ALO, NY </p>
+                                <p class="fs-6 fw-light text-white mb-0">KeyBank Center</p>
+                                <p class="fs-6 fw-light text-white mb-4">Pre-sale 20th June - Local Time</p>
+
+                                <a href="#" class="btn btn-outline-light py-2 px-3 fs-18 ff-zilla fw-semibold">Buy
+                                    Tickets</a>
+                            </div>
+                        </div>
+
+                        <!-- item 6 -->
+                        <div class="tour-event-box">
+                            <div class="pb-3 text-border-bottom">
+                                <p class="fs-24 fw-light ff-zilla text-white mb-0">AUG, 2022</p>
+                                <p class="fs-44 fw-bold text-white mb-0">20</p>
+                            </div>
+                            <div class="py-3 text-border-bottom">
+                                <p class="fs-5 fw-bold text-white mb-0">MONTREAL, QC</p>
+                                <p class="fs-6 fw-light text-white mb-0">Bell Centre</p>
+                                <p class="fs-6 fw-light text-white mb-4">On sale 11am 2nd August</p>
+
+                                <a href="#" class="btn btn-outline-light py-2 px-3 fs-18 ff-zilla fw-semibold">Buy
+                                    Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- view full calender button -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-effect px-5 py-2 py-md-3"><span
+                                class="px-0 px-md-4 py-0 text-white fs-20 fw-semibold ff-zilla">Full Calendar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gigs and tours section end -->
+
+    <!-- New Album available in stores section start -->
+    <section class="index-new-album-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center new-album-text position-relative">
+                        <h3 class="fw-semibold ff-zilla fs-24 m-0" data-aos="fade-right" data-aos-easing="linear">
+                            Cd/dvd,
+                            vinyl and digital</h3>
+                        <h2 class="fw-semibold ff-zilla fs-66 m-0" data-aos="fade-left" data-aos-easing="linear">New
+                            Album
+                            available in stores!</h2>
+                        <a href="#"
+                            class="btn btn-effect fs-18 ff-zilla fw-semibold d-inline-block mt-4 me-2 text-white py-2 px-4">Buy
+                            Here</a>
+                        <a href="#"
+                            class="btn btn-outline-light fs-18 ff-zilla fw-semibold d-inline-block mt-4 ms-2 py-2 px-4">Full
+                            Discography</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Album available in stores section end -->
+
+    <!-- Band History section start -->
+    <section class="index-band-history bg-primary py-4 py-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="heading-1 position-relative text-white d-inline-block">Band History</h2>
+                        <p class="fw-light fs-6 mt-3 text-white">These are our beginnings. And we have just started.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <!-- row 1 year 2019 start -->
+                <div class="col-12">
+                    <div class="text-center my-4 my-lg-5 year-number-circle">
+                        <h3
+                            class="fw-semibold fs-24 text-white d-inline-block rounded-circle border border-secondary year">
+                            2019</h3>
+                    </div>
+                </div>
+                <!-- text data for 2019 -->
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+
+
+                    <div class="history-images-container flex-wrap align-items-center d-flex justify-content-end mb-4">
+                        <div class="double-image">
+                            <div class="image-box">
+                                <img src="./assets/images/index/2019-img-1.png" alt="2019-img-1" class="img-fluid">
+                            </div>
+                            <div class="image-box">
+                                <img src="./assets/images/index/2019-img-3.png" alt="2019-img-3" class="img-fluid">
+                            </div>
+
+                        </div>
+
+                        <div class="single-image">
+                            <div class="image-box ms-2">
+                                <img src="./assets/images/index/2019-img-2.png" alt="2019-img-2" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <div class="year-wise-data year-wise-data-2 px-0 px-md-5 pt-1 text-center text-md-start">
+                        <h3 class="date-text fs-18 text-white fw-light">MARCH 23TH 2019</h3>
+                        <h2 class="fs-30 fw-light ff-zilla text-white">Making the first beats wasn’t easy but it was our
+                            dream</h2>
+                        <p class="fs-6 text-white fw-light">In 2015, John Foster and a small group of rock & roll
+                            believers
+                            came together in a New York loft
+                            with big ideas and little funding to create best band.
+                        </p>
+                        <!-- audio -->
+                        <div class="holder">
+                            <div class="audio green-audio-player">
+                                <div class="loading">
+                                    <div class="spinner"></div>
+                                </div>
+                                <div class="play-pause-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon" id="playPause" />
+                                    </svg>
+                                </div>
+
+                                <div class="controls">
+                                    <span class="current-time text-white">0:00</span>
+                                    <div class="slider" data-direction="horizontal">
+                                        <div class="progress">
+                                            <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                        </div>
+                                    </div>
+                                    <span class="total-time text-white">0:00</span>
+                                </div>
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#566574" fill-rule="evenodd"
+                                                d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                                                id="speaker" />
+                                        </svg>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <audio crossorigin>
+                                    <source
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- row 2 year 2020 start -->
+                <div class="col-12">
+                    <div class="text-center my-4 my-lg-5 year-number-circle">
+                        <h3
+                            class="fw-semibold fs-24 text-white d-inline-block rounded-circle border border-secondary year">
+                            2020</h3>
+                    </div>
+                </div>
+                <!-- text data for 2020 -->
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <div class="year-wise-data left-side text-center text-md-end px-0 px-md-5 pt-3">
+                        <h3 class="date-text for-md fs-18 text-white fw-light">OCTOBER 17TH 2020</h3>
+                        <h2 class="fs-30 fw-light ff-zilla text-white">There was nothing more important than rock & roll
+                        </h2>
+                        <p class="fs-6 text-white fw-light">Despite the nearly 30-year age, our band grew close. We had
+                            great sense of beat. We are an open mind and an open ear. Someone recognized our talent and
+                            a
+                            few months later we were having the best gigs ever.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+
+                    <div
+                        class="history-images-container d-flex flex-wrap align-items-center justify-content-md-start ps-0 ps-md-4 justify-content-center mb-4">
+                        <div class="double-image">
+                            <div class="image-box">
+                                <img src="./assets/images/index/2020-img-1.png" alt="2020-img-1" class="img-fluid">
+                            </div>
+                            <div class="image-box">
+                                <img src="./assets/images/index/2020-img-3.png" alt="2020-img-3" class="img-fluid">
+                            </div>
+
+                        </div>
+
+                        <div class="single-image">
+                            <div class="image-box ms-2">
+                                <img src="./assets/images/index/2020-img-2.png" alt="2020-img-2" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- row 3 year 2021 start -->
+                <div class="col-12">
+                    <div class="text-center my-4 my-lg-5 year-number-circle">
+                        <h3
+                            class="fw-semibold fs-24 text-white d-inline-block rounded-circle border border-secondary year">
+                            2021</h3>
+                    </div>
+                </div>
+                <!-- text data for 2019 -->
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <!-- blank -->
+                </div>
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <div class="year-wise-data px-0 px-md-5 text-center text-md-start">
+                        <h3 class="date-text fs-18 text-white fw-light pt-1">FEBRUARY 14TH 2021</h3>
+                        <h2 class="fs-30 fw-light ff-zilla text-white">Music videos represent our stories</h2>
+                        <p class="fs-6 text-white fw-light">Director Nikolas Wayne contacted us because he became a big
+                            fan
+                            of ours. It was the best experience ever. We made video clips and video as soon as we
+                            released
+                            we had more than 5 short films about our beginnings and lifes.
+                        </p>
+                        <!-- audio -->
+                        <div class="holder">
+                            <div class="audio green-audio-player">
+                                <div class="loading">
+                                    <div class="spinner"></div>
+                                </div>
+                                <div class="play-pause-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon" />
+                                    </svg>
+                                </div>
+
+                                <div class="controls">
+                                    <span class="current-time text-white">0:00</span>
+                                    <div class="slider" data-direction="horizontal">
+                                        <div class="progress">
+                                            <div class="pin" id="progress-pin2" data-method="rewind"></div>
+                                        </div>
+                                    </div>
+                                    <span class="total-time text-white">0:00</span>
+                                </div>
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#566574" fill-rule="evenodd"
+                                                d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                                                id="speaker2" />
+                                        </svg>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin2" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <audio crossorigin>
+                                    <source
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <div class="year-wise-data left-side text-center text-md-end px-0 px-md-5 pt-3">
+                        <h3 class="date-text fs-18 text-white fw-light">DECEMBER 29TH 2021</h3>
+                        <h2 class="fs-30 fw-light ff-zilla text-white">UK Top 100
+                        </h2>
+                        <p class="fs-6 text-white fw-light ms-0 ms-xl-5 ps-0 ps-xl-5">New song “This is what we came
+                            for“
+                            became a huge hit. It deserves a music video.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <!-- blank -->
+                </div>
+
+
+                <!-- row 3 year 2022 start -->
+                <div class="col-12">
+                    <div class="text-center my-4 my-lg-5 year-number-circle last">
+                        <h3
+                            class="fw-semibold fs-24 text-white d-inline-block rounded-circle border border-secondary year">
+                            2022</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <div
+                        class="text-end image-zoom-out pe-0 pe-sm-3 pe-md-4 pe-lg-5 position-relative video-image mb-4">
+                        <a href="#">
+                            <img src="./assets/images/index/video-img.png" alt="video-img" class="img-fluid">
+                            <div class="play-btn d-none d-xl-inline-block">
+                                <svg class="position-absolute" width="97" height="97" viewBox="0 0 97 97" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="48.5" cy="48.5" r="47" stroke-width="3" />
+                                    <path d="M67.3778 49.7678L40.0497 64.7736L40.7184 33.6038L67.3778 49.7678Z" />
+                                </svg>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+                    <div class="year-wise-data px-0 px-md-5 pt-1 text-center text-md-start">
+                        <h3 class="date-text fs-18 text-white fw-light mt-1">FEBRUARY 14TH 2021</h3>
+                        <h2 class="fs-30 fw-light ff-zilla text-white">Music videos represent our stories</h2>
+                        <p class="fs-6 text-white fw-light last">Director Nikolas Wayne contacted us because he became a
+                            big
+                            fan
+                            of ours. It was the best experience ever. We made video clips and video as soon as we
+                            released
+                            we had more than 5 short films about our beginnings and lifes.
+                        </p>
+                        <!-- audio -->
+                        <div class="holder">
+                            <div class="audio green-audio-player">
+                                <div class="loading">
+                                    <div class="spinner"></div>
+                                </div>
+                                <div class="play-pause-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0"
+                                            class="play-pause-icon" />
+                                    </svg>
+                                </div>
+
+                                <div class="controls">
+                                    <span class="current-time text-white">0:00</span>
+                                    <div class="slider" data-direction="horizontal">
+                                        <div class="progress">
+                                            <div class="pin" id="progress-pin3" data-method="rewind"></div>
+                                        </div>
+                                    </div>
+                                    <span class="total-time text-white">0:00</span>
+                                </div>
+
+                                <div class="volume">
+                                    <div class="volume-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#566574" fill-rule="evenodd"
+                                                d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                                                id="speaker3" />
+                                        </svg>
+                                    </div>
+                                    <div class="volume-controls hidden">
+                                        <div class="slider" data-direction="vertical">
+                                            <div class="progress">
+                                                <div class="pin" id="volume-pin3" data-method="changeVolume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <audio crossorigin>
+                                    <source
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Band History section end -->
+
+    <!-- Listen to our Latest Releases section start -->
+    <section class="index-listen-our-latest-sec bg-primary py-4 py-lg-5">
+        <div class="py-0 py-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2 class="heading-1 text-white position-relative d-inline-block mb-4 mb-lg-5">Listen to our
+                                Latest
+                                Releases</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Listen to our Latest cards -->
+                <div class="row gx-0 gx-md-4">
+                    <!-- card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="listen-latest-card mt-4 mt-lg-5 position-relative">
+                            <div class="text-center position-relative">
+                                <!-- background image -->
+                                <img src="./assets/images/index/listen-latest-img-1.png" alt="listen-latest-img-1"
+                                    class="img-fluid" />
+                            </div>
+                            <!-- after hover showing content -->
+                            <div class="text-data position-absolute d-flex align-items-center">
+                                <div class="text-center p-3">
+                                    <h3 class="fw-light text-white ff-zilla fs-34 position-relative heading">Heart of
+                                        the
+                                        People
+                                    </h3>
+                                    <p class="mt-4 mb-4 fw-light text-white fs-6">Lorem Ipsum is simply dummy text of
+                                        the
+                                        printing
+                                        and typesetting industry</p>
+                                    <a href="#"
+                                        class="btn btn-outline-light py-2 px-3 fw-semibold fs-18 ff-zilla">Coming
+                                        Soon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="listen-latest-card mt-4 mt-lg-5 position-relative">
+                            <div class="text-center position-relative">
+                                <!-- background image -->
+                                <img src="./assets/images/index/listen-latest-img-2.png" alt="listen-latest-img-1"
+                                    class="img-fluid" />
+                            </div>
+                            <!-- after hover showing content -->
+                            <div class="text-data position-absolute d-flex align-items-center">
+                                <div class="text-center p-3">
+                                    <h3 class="fw-light text-white ff-zilla fs-34 position-relative heading">Heart of
+                                        the
+                                        People
+                                    </h3>
+                                    <p class="mt-4 mb-4 fw-light text-white fs-6">Lorem Ipsum is simply dummy text of
+                                        the
+                                        printing
+                                        and typesetting industry</p>
+                                    <a href="#"
+                                        class="btn btn-outline-light py-2 px-3 fw-semibold fs-18 ff-zilla">Coming
+                                        Soon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="listen-latest-card mt-4 mt-lg-5 position-relative">
+                            <div class="text-center position-relative">
+                                <!-- background image -->
+                                <img src="./assets/images/index/listen-latest-img-3.png" alt="listen-latest-img-1"
+                                    class="img-fluid" />
+                            </div>
+                            <!-- after hover showing content -->
+                            <div class="text-data position-absolute d-flex align-items-center">
+                                <div class="text-center p-3">
+                                    <h3 class="fw-light text-white ff-zilla fs-34 position-relative heading">Heart of
+                                        the
+                                        People
+                                    </h3>
+                                    <p class="mt-4 mb-4 fw-light text-white fs-6">Lorem Ipsum is simply dummy text of
+                                        the
+                                        printing
+                                        and typesetting industry</p>
+                                    <a href="#"
+                                        class="btn btn-outline-light py-2 px-3 fw-semibold fs-18 ff-zilla">Coming
+                                        Soon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Listen to our Latest Releases section end -->
+
+    <!-- Merchandise section start -->
+    <section class="index-merchandise-sec bg-info py-4 py-lg-5">
+        <div class="py-0 py-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2 class="heading-1 text-white position-relative d-inline-block mb-4">Merchandise</h2>
+                            <p class="fs-6 fw-light text-white">These are our beginnings. And we have just started.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- item 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="merchandise-item text-center my-4 my-lg-5" data-aos="flip-left"
+                            data-aos-duration="1000" data-aos-easing="ease-out">
+                            <div class="merchandise-image">
+                                <a href="#">
+                                    <img src="./assets/images/index/merchandise-item-1.png" alt="merchandise-item-1"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="merchandise-info px-0 px-xl-4 mt-2">
+                                <div class="d-flex justify-content-between px-0 px-xl-1">
+                                    <span class="fs-6 fw-light text-white">T-shirts</span>
+                                    <span><img src="./assets/images/index/stars.svg" alt=""></span>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between px-0 px-lg-1">
+                                    <div class="text-start">
+                                        <p class="text-start fs-4 text-white fw-light mb-0">Famous T-Shirt</p>
+                                        <p class="fw-bold fs-4 m-0">$15.00</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-outline-light fs-18 fw-semibold ff-zilla py-2 px-3">Add
+                                        to Cart</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="merchandise-item text-center my-4 my-lg-5" data-aos="flip-left"
+                            data-aos-duration="1000" data-aos-easing="ease-out">
+                            <div class="merchandise-image">
+                                <a href="#">
+                                    <img src="./assets/images/index/merchandise-item-2.png" alt="merchandise-item-1"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="merchandise-info px-0 px-xl-4 mt-2">
+                                <div class="d-flex justify-content-between px-0 px-xl-1">
+                                    <span class="fs-6 fw-light text-white">Clothing . T-shirts</span>
+                                    <span><img src="./assets/images/index/stars.svg" alt=""></span>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between px-0 px-lg-1">
+
+                                    <div class="text-start">
+                                        <p class="text-start fs-4 text-white fw-light mb-0">Beats T-Shirt</p>
+                                        <p class="fw-bold fs-4 m-0">$15.00</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-outline-light fs-18 fw-semibold ff-zilla py-2 px-3">Add
+                                        to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="merchandise-item text-center my-4 my-lg-5" data-aos="flip-left"
+                            data-aos-duration="1000" data-aos-easing="ease-out">
+                            <div class="merchandise-image">
+                                <a href="#">
+                                    <img src="./assets/images/index/merchandise-item-3.png" alt="merchandise-item-1"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="merchandise-info px-0 px-xl-4 mt-2">
+                                <div class="d-flex justify-content-between px-0 px-xl-1">
+                                    <span class="fs-6 fw-light text-white">T-shirts</span>
+                                    <span><img src="./assets/images/index/stars.svg" alt=""></span>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between px-0 px-lg-1">
+                                    <div class="text-start">
+                                        <p class="text-start fs-4 text-white fw-light mb-0">Beats T-Shirt</p>
+                                        <p class="fw-bold fs-4 m-0">$15.00</p>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-light fs-18 fw-semibold ff-zilla py-2 px-3">Add
+                                        to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="text-center mt-4">
+                            <a href="./shop.html" class="btn btn-effect px-3 px-md-5 py-2 py-md-3">
+                                <span class="px-3 px-md-5 py-0 text-white fs-20 fw-semibold ff-zilla">Go To Shop</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Merchandise section end -->
+
+    <!-- Testimonials section start -->
+    <section class="services-testimonial-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h2
+                            class="heading after-underline ff-zilla fw-lighter fs-44 d-inline-block position-relative mb-0 mb-lg-3 mb-xl-4">
+                            Testimonials</h2>
+                    </div>
+                </div>
+
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-10 col-lg-9">
+                                    <div class="text-center">
+                                        <img src="./assets/images/services/left-quote.svg" alt="left-quote.svg"
+                                            class="img-fluid">
+                                        <p class="mt-4 fs-6 fw-lighter">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit, sed do
+                                            eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat
+                                            cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/images/services/user-img.png" alt="user-img.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="ms-3 text-start">
+                                                <p class="mb-0 fs-3 ff-zilla fw-semibold">Sadie Sink</p>
+                                                <p class="mb-0 fs-14 fw-normal">Singer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-10 col-lg-9">
+                                    <div class="text-center">
+                                        <img src="./assets/images/services/left-quote.svg" alt="left-quote.svg"
+                                            class="img-fluid">
+                                        <p class="mt-4 fs-6 fw-lighter">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit, sed do
+                                            eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat
+                                            cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/images/services/user-img.png" alt="user-img.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="ms-3 text-start">
+                                                <p class="mb-0 fs-3 ff-zilla fw-semibold">Sadie Sink</p>
+                                                <p class="mb-0 fs-14 fw-normal">Singer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-10 col-lg-9">
+                                    <div class="text-center">
+                                        <img src="./assets/images/services/left-quote.svg" alt="left-quote.svg"
+                                            class="img-fluid">
+                                        <p class="mt-4 fs-6 fw-lighter">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
+                                            elit, sed do
+                                            eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat
+                                            cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <img src="./assets/images/services/user-img.png" alt="user-img.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="ms-3 text-start">
+                                                <p class="mb-0 fs-3 ff-zilla fw-semibold">Sadie Sink</p>
+                                                <p class="mb-0 fs-14 fw-normal">Singer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials section end -->
+
+
+    <!-- login modal section start -->
+    <section class="login-modal-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 col-11">
+                    <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel"
+                        style="display: none;" aria-hidden="true">
+
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-primary">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gridModalLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#">
+                                        <input type="text" class="form-control mb-3"
+                                            placeholder="Username / Mobile Number">
+                                        <input type="password" name="password" class="form-control mb-3"
+                                            placeholder="Password">
+                                        <div class="d-flex align-items-center checkbox">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <p class="fs-10 fw-lighter text-white mb-0 ms-2">I have read and agree to
+                                                the website terms
+                                                and
+                                                conditions *</p>
+                                        </div>
+                                        <button type="button"
+                                            class="w-100 btn btn-outline-secondary rounded-0 px-4 hover-secondary mb-2 fw-bold">LOG
+                                            IN</button>
+                                        <div class="text-center mb-2">
+                                            <span>OR</span>
+                                        </div>
+                                        <button type="button"
+                                            class="w-100 btn btn-light btn-light-hover rounded-0  fw-500 fw-bold mb-3">FORGOT
+                                            PASSWORD</button>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer start -->
+    <footer class="footer bg-secondary py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- footer nav links -->
+                <div class="col-md-10">
+                    <div>
+                        <ul
+                            class="footer-nav list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-md-start mb-2">
+                            <li class="footer-nav-item me-0 me-3 my-2">
+                                <a href="./index.html" class="footer-nav-link active">Home</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./about.html" class="footer-nav-link">About Us</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./services.html" class="footer-nav-link">Services</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./blog.html" class="footer-nav-link">Blog</a>
+                            </li>
+                            <li class="footer-nav-item mx-3 my-2">
+                                <a href="./shop.html" class="footer-nav-link">Shop</a>
+                            </li>
+                            <li class="footer-nav-item ms-3 my-2">
+                                <a href="./contact.html" class="footer-nav-link">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- footer social media icons -->
+                <div class="col-md-2">
+                    <ul
+                        class="footer-nav list-unstyled d-flex align-items-center mb-2 justify-content-center justify-content-md-end">
+                        <li class="footer-nav-item me-3">
+                            <a class="footer-nav-link nav-s-media-links border-start-0 position-relative" href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-nav-item mx-3">
+                            <a class="footer-nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- copyright text -->
+                <div class="col-12">
+                    <div class="text-center text-md-start mt-3 mt-md-0">
+                        <a href="#" class="text-decoration-none text-white fs-6 fw-500">© 2022 Copyright by
+                            Retroller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- all script files and cdns -->
+    <!-- bootstrap script files -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- aos animation script file -->
+    <script src="./node_modules/aos/src/js/aos.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery and cdn for numbers counting -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/counting.js"></script>
+
+    <!-- script for audio -->
+    <script src="./assets/js/audio.js"></script>
+
+    <!-- slick carousel cdn -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- slick all scripts -->
+    <script src="./vendors/slick/slick/slick.min.js"></script>
+
+    <!-- slick center script  -->
+    <script src="./assets/js/slick-center.js"></script>
+
+    <!-- filter range script file -->
+    <script src="./assets/js/range.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.not-found-page {
+    @include bg-properties(url(../../assets/images/404-page.png));
+    height: 100vh;
+    width: 100vw;
+
+    .oops-img-section {
+        top: 38%;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        @include media-breakpoint-down(md){
+            top: 30%;
+        }
+
+    }
+
+    .not-found-text {
+        top: 1%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        display: inline-block;
+    }
+}

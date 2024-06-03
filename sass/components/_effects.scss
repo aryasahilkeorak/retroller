@@ -1,0 +1,26 @@
+.image-zoom-in {
+    overflow: hidden;
+
+    img {
+        transition: ease-in-out 1s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.image-zoom-out {
+    overflow: hidden;
+
+    &:hover {
+        img {
+            transform: scale(0.95);
+        }
+    }
+
+    img {
+        transition: ease-in-out 1s;
+
+    }
+}

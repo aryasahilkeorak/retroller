@@ -1,0 +1,15 @@
+.footer{
+    .footer-nav{
+        .footer-nav-item{
+            .footer-nav-link{
+                color: $white;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: calc($fs-small + 2px);
+                &.active{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
